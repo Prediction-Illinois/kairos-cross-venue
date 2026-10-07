@@ -304,6 +304,7 @@ def opportunity_rows(scan: ScanReport, top: int = 10) -> list[dict[str, Any]]:
                 'contracts': depth.contracts if depth else best.contracts if best else None,
                 'net_edge': depth.net_edge if depth else best.net_edge if best else None,
                 'checked_with': 'Kairos fee quotes' if item.indicative else 'order books',
+                'closes': str(item.relation.valid_until or '')[:10] or None,
             }
         )
     return rows
@@ -807,14 +808,22 @@ def markdown(data: dict[str, Any], day: str, drawn: Mapping[str, bool], *, chart
     if scan['opportunities']:
         lines += [
             '',
-            '| Division | Venues | Market A | Market B | Basket | Contracts | Net edge | Checked with |',
-            '|---|---|---|---|---|---|---|---|',
+            '| Division | Venues | Market A | Market B | Basket | Contracts | Net edge | Checked with | Closes |',
+            '|---|---|---|---|---|---|---|---|---|',
         ]
         for o in scan['opportunities']:
             lines.append(
                 f"| {o['division']} | {o['venues']} | {cell(o['market_a'])} | {cell(o['market_b'])} "
-                f"| {cell(o['basket'])} | {o['contracts']} | ${(o['net_edge'] or 0):.4f} | {o['checked_with']} |"
+                f"| {cell(o['basket'])} | {o['contracts']} | ${(o['net_edge'] or 0):.4f} | {o['checked_with']} "
+                f"| {o.get('closes') or '–'} |"
             )
+        lines += [
+            '',
+            'Net edge is for all the contracts together. It assumes every leg fills at the prices used, '
+            'both markets settle the same way, and money tied up until settlement costs nothing, '
+            'which matters for markets that close years from now. Closes is the earlier of the '
+            "two markets' closing times.",
+        ]
     lines += [
         '',
         'Most edges at the top of the book disappear after fees, in the order books, or once a stale '
