@@ -43,6 +43,15 @@ jobs:
       - name: Install
         run: pip install -r requirements.txt
 
+      - name: Check the Kairos key
+        if: env.KAIROS_API_KEY != ''
+        # Prints the response status and rate-limit tier only, never the key.
+        run: |
+          curl -s -o /dev/null -D - \
+            -H "X-Client-Id: ${KAIROS_CLIENT_ID}" -H "X-Api-Key: ${KAIROS_API_KEY}" -H "X-Api-Secret: ${KAIROS_API_SECRET}" \
+            "https://md.kairos.trade/v1/resolutions?provider=kalshi&market_ids=KXNHLGAME-26OCT10DALPIT-DAL" \
+            | grep -i -E '^HTTP|^x-ratelimit-tier|^x-ratelimit-limit'
+
       - name: Restore the pair archive
         uses: actions/cache/restore@v4
         with:
