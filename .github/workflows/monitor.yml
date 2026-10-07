@@ -1,0 +1,75 @@
+name: Monitor
+
+# Every six hours: archive Kairos's Kalshi–Polymarket pairs, so they outlive
+# the catalog. Once a day (12:00 UTC): also build the report and commit it.
+# The pair archive lives in the Actions cache, which is not public; only
+# aggregate statistics and charts are committed.
+
+on:
+  schedule:
+    - cron: '0 0,6,18 * * *'
+    - cron: '0 12 * * *'
+  workflow_dispatch:
+    inputs:
+      report:
+        description: Build and commit the report
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    env:
+      # Optional: a read-only Kairos API key raises the rate limits.
+      KAIROS_CLIENT_ID: ${{ secrets.KAIROS_CLIENT_ID }}
+      KAIROS_API_KEY: ${{ secrets.KAIROS_API_KEY }}
+      KAIROS_API_SECRET: ${{ secrets.KAIROS_API_SECRET }}
+      REPORT: ${{ github.event.schedule == '0 12 * * *' || (github.event_name == 'workflow_dispatch' && inputs.report) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Restore the pair archive
+        uses: actions/cache/restore@v4
+        with:
+          path: archive
+          key: kairos-archive-${{ github.run_id }}
+          restore-keys: kairos-archive-
+
+      - name: Archive today's pairs
+        run: |
+          oracle3-extras --quiet kairos snapshot --archive archive/pairs.jsonl.gz \
+            | python -c "import json, sys; d = json.load(sys.stdin); print(d['summary']['aligned'], 'pairs lined up;', d['archived'])"
+
+      - name: Save the pair archive
+        uses: actions/cache/save@v4
+        with:
+          path: archive
+          key: kairos-archive-${{ github.run_id }}
+
+      - name: Build the report
+        if: env.REPORT == 'true'
+        run: python report.py --archive archive/pairs.jsonl.gz --out reports
+
+      - name: Commit the report
+        if: env.REPORT == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports README.md
+          git diff --cached --quiet || git commit -m "Report for $(date -u +%F)"
+          git push

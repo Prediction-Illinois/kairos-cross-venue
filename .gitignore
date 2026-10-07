@@ -1,0 +1,6 @@
+# The pair archive stays in the workflow cache; only aggregates are published.
+archive/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

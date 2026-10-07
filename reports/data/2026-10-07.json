@@ -1,0 +1,458 @@
+{
+  "generated_at": "2026-10-07T18:10:17+00:00",
+  "catalog": {
+    "catalog_version": "hyperliquid,kalshi,polymarket,predictfun:3266:2026-10-07 18:06:41.846:6196127071575098340",
+    "fetched_at": "2026-10-07T18:10:24+00:00",
+    "pairs": 2607,
+    "pairs_by_venues": {
+      "kalshi + polymarket": 2278,
+      "kalshi + predictfun": 248,
+      "hyperliquid + kalshi": 81
+    },
+    "kalshi_polymarket": 2278,
+    "aligned": 2236,
+    "same_event": 2236,
+    "complement": 0,
+    "with_warnings": 19,
+    "rejected": {
+      "different dates": 34,
+      "could not confirm both markets ask about the same team": 4,
+      "Kalshi market is inactive": 3,
+      "Kalshi market is finalized": 1
+    }
+  },
+  "leagues": {
+    "College football": 736,
+    "NFL": 190,
+    "MLS": 123,
+    "Premier League": 120,
+    "La Liga": 116,
+    "Liga MX": 111,
+    "Serie A": 99,
+    "NHL": 91,
+    "Champions League": 74,
+    "Brasileir\u00e3o": 69,
+    "ITF women": 67,
+    "NBA": 45,
+    "USL": 36,
+    "ITF men": 25,
+    "Kleague": 24,
+    "Ligue 1": 24,
+    "Conference League": 24,
+    "Ligaportugal": 21,
+    "Isrpl": 18,
+    "Jleague": 18,
+    "Srbsl": 18,
+    "Superlig": 18,
+    "MLB": 16,
+    "Canpl": 15,
+    "Saudipl": 15,
+    "Densuperliga": 12,
+    "Eliteserien": 12,
+    "Ufcfight": 11,
+    "Argpremdiv": 9,
+    "Chnsl": 9,
+    "Eredivisie": 9,
+    "Europa League": 9,
+    "ATP Challenger": 8,
+    "KHL": 8,
+    "ATP": 6,
+    "Cfl": 4,
+    "Shl": 4,
+    "WTA 125": 4,
+    "AHL": 3,
+    "KBO": 3,
+    "Liiga": 3,
+    "WTA": 3,
+    "Euroleague": 2,
+    "Cs2": 1,
+    "NPB": 1,
+    "Valorant": 1,
+    "WNBA": 1
+  },
+  "scan": {
+    "summary": {
+      "scanned_at": "2026-10-07T18:10:39+00:00",
+      "relations": 2236,
+      "quoted": 2236,
+      "violated_before_fees": 32,
+      "profitable_after_fees_top_of_book": 5,
+      "opportunities": 2,
+      "skipped": {},
+      "contracts": 1.0,
+      "order_type": "taker",
+      "depth_checked": true
+    },
+    "opportunities": [
+      {
+        "relation_id": "kairos:KXNBAGAME-26OCT13INDOKC-IND:5394612",
+        "relation": "same_event",
+        "market_a": {
+          "venue": "kalshi",
+          "market_id": "KXNBAGAME-26OCT13INDOKC-IND",
+          "name": "Indiana wins",
+          "yes_outcome": "Indiana"
+        },
+        "market_b": {
+          "venue": "polymarket",
+          "market_id": "5394612",
+          "name": "Pacers vs. Thunder",
+          "outcomes": [
+            "Pacers",
+            "Thunder"
+          ]
+        },
+        "basket": "NO on A + YES on B",
+        "top_of_book": {
+          "contracts": 1.0,
+          "cost": 0.96,
+          "fees": 0.02982,
+          "net_edge": 0.01018,
+          "net_edge_per_contract": 0.01018,
+          "legs": [
+            {
+              "market_id": "KXNBAGAME-26OCT13INDOKC-IND",
+              "venue": "kalshi",
+              "side": "no",
+              "price": 0.52,
+              "contracts": 1.0,
+              "cost": 0.52,
+              "fee": 0.0175
+            },
+            {
+              "market_id": "5394612",
+              "venue": "polymarket",
+              "side": "yes",
+              "price": 0.44,
+              "contracts": 1.0,
+              "cost": 0.44,
+              "fee": 0.01232
+            }
+          ]
+        },
+        "depth": {
+          "basket": "NO on A + YES on B",
+          "contracts": 6.32,
+          "cost": 6.1098,
+          "fees": 0.18816,
+          "net_edge": 0.02204,
+          "legs": [
+            {
+              "venue": "kalshi",
+              "market_id": "KXNBAGAME-26OCT13INDOKC-IND",
+              "side": "no",
+              "contracts": 6.32,
+              "average_price": 0.526741,
+              "worst_price": 0.53,
+              "fee": 0.1103
+            },
+            {
+              "venue": "polymarket",
+              "market_id": "5394612",
+              "side": "yes",
+              "contracts": 6.32,
+              "average_price": 0.44,
+              "worst_price": 0.44,
+              "fee": 0.07786
+            }
+          ],
+          "stopped_by": "edge",
+          "net_edge_per_contract": 0.003487
+        },
+        "warnings": [],
+        "skipped": null
+      },
+      {
+        "relation_id": "kairos:KXNHLGAME-26OCT13PITCHI-PIT:4616374",
+        "relation": "same_event",
+        "market_a": {
+          "venue": "kalshi",
+          "market_id": "KXNHLGAME-26OCT13PITCHI-PIT",
+          "name": "Pittsburgh wins",
+          "yes_outcome": "Pittsburgh"
+        },
+        "market_b": {
+          "venue": "polymarket",
+          "market_id": "4616374",
+          "name": "Penguins vs. Blackhawks",
+          "outcomes": [
+            "Penguins",
+            "Blackhawks"
+          ]
+        },
+        "basket": "YES on A + NO on B",
+        "top_of_book": {
+          "contracts": 1.0,
+          "cost": 0.97,
+          "fees": 0.02762,
+          "net_edge": 0.00238,
+          "net_edge_per_contract": 0.00238,
+          "legs": [
+            {
+              "market_id": "KXNHLGAME-26OCT13PITCHI-PIT",
+              "venue": "kalshi",
+              "side": "yes",
+              "price": 0.63,
+              "contracts": 1.0,
+              "cost": 0.63,
+              "fee": 0.0164
+            },
+            {
+              "market_id": "4616374",
+              "venue": "polymarket",
+              "side": "no",
+              "price": 0.34,
+              "contracts": 1.0,
+              "cost": 0.34,
+              "fee": 0.01122
+            }
+          ]
+        },
+        "depth": {
+          "basket": "YES on A + NO on B",
+          "contracts": 5.09,
+          "cost": 4.9373,
+          "fees": 0.14021,
+          "net_edge": 0.01249,
+          "legs": [
+            {
+              "venue": "kalshi",
+              "market_id": "KXNHLGAME-26OCT13PITCHI-PIT",
+              "side": "yes",
+              "contracts": 5.09,
+              "average_price": 0.63,
+              "worst_price": 0.63,
+              "fee": 0.0831
+            },
+            {
+              "venue": "polymarket",
+              "market_id": "4616374",
+              "side": "no",
+              "contracts": 5.09,
+              "average_price": 0.34,
+              "worst_price": 0.34,
+              "fee": 0.05711
+            }
+          ],
+          "stopped_by": "edge",
+          "net_edge_per_contract": 0.002454
+        },
+        "warnings": [],
+        "skipped": null
+      }
+    ],
+    "assumptions": [
+      "every leg fills at the prices used",
+      "both markets settle the same way, including ties, postponements and cancellations",
+      "capital locked until settlement costs nothing",
+      "books are read one venue after the other, so prices can move in between"
+    ]
+  },
+  "history": {
+    "pairs": 282,
+    "pairs_with_overlap": 252,
+    "problems": {},
+    "minutes": 6814,
+    "median_abs_gap": 0.01,
+    "p90_abs_gap": 0.04,
+    "max_abs_gap": 0.507,
+    "share_wide": 0.3569,
+    "before_start": {
+      "minutes": 366,
+      "median_abs_gap": 0.01,
+      "p90_abs_gap": 0.02,
+      "max_abs_gap": 0.15,
+      "share_wide": 0.3279
+    },
+    "after_start": {
+      "minutes": 6448,
+      "median_abs_gap": 0.01,
+      "p90_abs_gap": 0.04,
+      "max_abs_gap": 0.507,
+      "share_wide": 0.3586
+    },
+    "by_minutes_from_start": [
+      {
+        "from": -120,
+        "to": -90,
+        "minutes": 54,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.0293,
+        "max_abs_gap": 0.043,
+        "share_wide": 0.4444
+      },
+      {
+        "from": -90,
+        "to": -60,
+        "minutes": 55,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.05,
+        "share_wide": 0.3455
+      },
+      {
+        "from": -60,
+        "to": -30,
+        "minutes": 81,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.02,
+        "max_abs_gap": 0.03,
+        "share_wide": 0.4691
+      },
+      {
+        "from": -30,
+        "to": 0,
+        "minutes": 176,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.02,
+        "max_abs_gap": 0.15,
+        "share_wide": 0.2216
+      },
+      {
+        "from": 0,
+        "to": 30,
+        "minutes": 931,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.33,
+        "share_wide": 0.3061
+      },
+      {
+        "from": 30,
+        "to": 60,
+        "minutes": 1224,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.1,
+        "share_wide": 0.3007
+      },
+      {
+        "from": 60,
+        "to": 90,
+        "minutes": 1283,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.13,
+        "share_wide": 0.2892
+      },
+      {
+        "from": 90,
+        "to": 120,
+        "minutes": 948,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.04,
+        "max_abs_gap": 0.507,
+        "share_wide": 0.3523
+      },
+      {
+        "from": 120,
+        "to": 150,
+        "minutes": 797,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.05,
+        "max_abs_gap": 0.23,
+        "share_wide": 0.4253
+      },
+      {
+        "from": 150,
+        "to": 180,
+        "minutes": 637,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.05,
+        "max_abs_gap": 0.16,
+        "share_wide": 0.449
+      },
+      {
+        "from": 180,
+        "to": 210,
+        "minutes": 396,
+        "median_abs_gap": 0.02,
+        "p90_abs_gap": 0.06,
+        "max_abs_gap": 0.183,
+        "share_wide": 0.5152
+      },
+      {
+        "from": 210,
+        "to": 240,
+        "minutes": 232,
+        "median_abs_gap": 0.02,
+        "p90_abs_gap": 0.06,
+        "max_abs_gap": 0.22,
+        "share_wide": 0.5388
+      }
+    ],
+    "widest": [
+      {
+        "relation_id": "kairos:KXITFMATCH-26OCT07DZHSEL-DZH:5374955",
+        "kalshi": "Yurii Dzhavakian wins",
+        "polymarket": "M15 Sharm ElSheikh: Yurii Dzhavakian vs Bogdan Seleznev",
+        "start": "2026-10-07T09:30:00+00:00",
+        "minutes": 40,
+        "median_abs_gap": 0.0592,
+        "p90_abs_gap": 0.14,
+        "max_abs_gap": 0.23,
+        "share_wide": 0.825,
+        "problem": null
+      },
+      {
+        "relation_id": "kairos:KXITFWMATCH-26OCT06YUNSUN-YUN:5369938",
+        "kalshi": "Alina Yuneva wins",
+        "polymarket": "W15 Maanshan: Alina Yuneva vs Yingqun Sun",
+        "start": "2026-10-07T03:30:00+00:00",
+        "minutes": 74,
+        "median_abs_gap": 0.02,
+        "p90_abs_gap": 0.06,
+        "max_abs_gap": 0.22,
+        "share_wide": 0.5405,
+        "problem": null
+      },
+      {
+        "relation_id": "kairos:KXITFMATCH-26OCT07SEIPAL-SEI:5391350",
+        "kalshi": "Stefan Seifert wins",
+        "polymarket": "M15 Pontevedra: Stefan Seifert vs Xavi Palomar",
+        "start": "2026-10-07T08:30:00+00:00",
+        "minutes": 26,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.06,
+        "max_abs_gap": 0.21,
+        "share_wide": 0.5,
+        "problem": null
+      },
+      {
+        "relation_id": "kairos:KXITFMATCH-26OCT07MAGCIR-MAG:5374966",
+        "kalshi": "Cian Maguire wins",
+        "polymarket": "M15 Burgas: Cian Maguire vs Aleksa Ciric",
+        "start": "2026-10-07T10:00:00+00:00",
+        "minutes": 13,
+        "median_abs_gap": 0.019,
+        "p90_abs_gap": 0.129,
+        "max_abs_gap": 0.183,
+        "share_wide": 0.4615,
+        "problem": null
+      },
+      {
+        "relation_id": "kairos:KXITFMATCH-26OCT07RECAND-REC:5391373",
+        "kalshi": "Alexandre Reco wins",
+        "polymarket": "M15+H Rodez: Alexandre Reco vs Romain Andres",
+        "start": "2026-10-07T12:00:00+00:00",
+        "minutes": 25,
+        "median_abs_gap": 0.0282,
+        "p90_abs_gap": 0.1055,
+        "max_abs_gap": 0.18,
+        "share_wide": 0.72,
+        "problem": null
+      }
+    ],
+    "wide_gap": 0.02
+  },
+  "settlement": {
+    "checked": 283,
+    "settled": 262,
+    "pending": 21,
+    "agree": 262,
+    "disagree": 0,
+    "agreement_rate": 1.0,
+    "mismatches": []
+  },
+  "archive_pairs": 2547
+}
