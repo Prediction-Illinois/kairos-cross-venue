@@ -1,9 +1,10 @@
 name: Monitor
 
-# Every six hours: archive Kairos's Kalshi–Polymarket pairs, so they outlive
-# the catalog. Once a day (12:00 UTC): also build the report and commit it.
-# The pair archive lives in the Actions cache, which is not public; only
-# aggregate statistics and charts are committed.
+# Three times a day: archive Kairos's pairs (Kalshi, Polymarket, Predict.fun,
+# Hyperliquid), so they outlive the catalog. Once a day (12:00 UTC): also build
+# the report by market division and commit it. The pair archive lives in the
+# Actions cache, which is not public; only aggregate statistics and charts are
+# committed.
 
 on:
   schedule:
@@ -27,7 +28,8 @@ jobs:
   monitor:
     runs-on: ubuntu-latest
     env:
-      # Optional: a read-only Kairos API key raises the rate limits.
+      # Optional: a read-only Kairos API key raises the rate limits tenfold and
+      # lets the report confirm Predict.fun prices with Kairos fee quotes.
       KAIROS_CLIENT_ID: ${{ secrets.KAIROS_CLIENT_ID }}
       KAIROS_API_KEY: ${{ secrets.KAIROS_API_KEY }}
       KAIROS_API_SECRET: ${{ secrets.KAIROS_API_SECRET }}

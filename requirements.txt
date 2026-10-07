@@ -1,2 +1,2 @@
-oracle3-extras @ git+https://github.com/YichengYang-Ethan/oracle3-extras.git@v0.3.0
+oracle3-extras @ git+https://github.com/YichengYang-Ethan/oracle3-extras.git@v0.4.0
 matplotlib>=3.8
