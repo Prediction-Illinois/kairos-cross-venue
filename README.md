@@ -3,15 +3,15 @@
 A daily look at how prediction markets price the same events on different venues, built on [Kairos](https://kairos.trade)'s matched-market catalog. Kairos finds the same market on Kalshi, Polymarket, Predict.fun and Hyperliquid; this repository checks every pair it lists and reports by [Prediction@Illinois](https://prediction-illinois.github.io)'s six market divisions: Elections & Politics, Sports, Crypto, Economics & Finance, Tech & Science, and Climate & Weather.
 
 <!-- report:start -->
-**Latest report: [2026-10-11](reports/latest.md)**: 13,819 of 13,897 Kairos pairs lined up across Kalshi, Polymarket, Predict.fun and Hyperliquid.
+**Latest report: [2026-10-12](reports/latest.md)**: 13,994 of 14,093 Kairos pairs lined up across Kalshi, Polymarket, Predict.fun and Hyperliquid.
 
 | Division | Pairs Kairos lists | Lined up | Edge after fees, confirmed | Median gap, last 24 h | Settled the same way, last 7 days |
 |---|---|---|---|---|---|
-| Elections & Politics | 383 | 383 | 2 of 169 | 1.2¢ (2 pairs) | – |
-| Sports | 12,623 | 12,545 | 1 of 3,424 | 1.0¢ (734 pairs) | 7,117 of 7,119 |
-| Crypto | 448 | 448 | 0 of 276 | 2.6¢ (25 pairs) | 269 of 269 |
-| Economics & Finance | 283 | 283 | 0 of 161 | 0.5¢ (9 pairs) | – |
-| Tech & Science | 136 | 136 | 0 of 57 | 1.5¢ (8 pairs) | 1 of 1 |
+| Elections & Politics | 383 | 383 | 2 of 169 | 0.7¢ (34 pairs) | – |
+| Sports | 12,813 | 12,714 | 3 of 3,517 | 1.0¢ (716 pairs) | 9,564 of 9,572 |
+| Crypto | 455 | 455 | 0 of 277 | 1.9¢ (46 pairs) | 353 of 353 |
+| Economics & Finance | 283 | 283 | 0 of 166 | 0.3¢ (21 pairs) | – |
+| Tech & Science | 135 | 135 | 0 of 57 | 0.9¢ (16 pairs) | 2 of 2 |
 | Climate & Weather | 0 | 0 | – | – | – |
 
 ![Pairs by division](reports/img/pairs-by-division.png)
