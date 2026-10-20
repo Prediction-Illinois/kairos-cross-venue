@@ -63,7 +63,8 @@ jobs:
 
       - name: Archive today's pairs
         run: |
-          oracle3-extras --quiet kairos snapshot --archive archive/pairs.jsonl.gz \
+          # --keep-days 3650: keep every pair ever archived, not just the last two weeks
+          oracle3-extras --quiet kairos snapshot --archive archive/pairs.jsonl.gz --keep-days 3650 \
             | python -c "import json, sys; d = json.load(sys.stdin); print(d['summary']['aligned'], 'pairs lined up;', d['archived'])"
 
       - name: Save the pair archive
