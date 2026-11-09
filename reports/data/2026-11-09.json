@@ -1,0 +1,1285 @@
+{
+  "generated_at": "2026-11-09T21:59:30+00:00",
+  "catalog": {
+    "catalog_version": "hyperliquid,kalshi,polymarket,predictfun:14180:2026-11-09 21:55:52.851:14402916267255178873",
+    "fetched_at": "2026-11-09T21:59:53+00:00",
+    "pairs": 11138,
+    "pairs_by_venues": {
+      "polymarket + predictfun": 8552,
+      "kalshi + polymarket": 2118,
+      "kalshi + predictfun": 309,
+      "hyperliquid + kalshi": 95,
+      "hyperliquid + polymarket": 48,
+      "hyperliquid + predictfun": 16
+    },
+    "considered": 11138,
+    "kalshi_polymarket": 2118,
+    "aligned": 10980,
+    "aligned_by_venues": {
+      "polymarket + predictfun": 8552,
+      "kalshi + polymarket": 2106,
+      "kalshi + predictfun": 306,
+      "predictfun + hyperliquid": 16
+    },
+    "same_event": 10980,
+    "complement": 0,
+    "with_warnings": 92,
+    "rejected": {
+      "different dates": 143,
+      "different start times": 7,
+      "could not confirm both markets ask about the same team": 4,
+      "Kalshi market is inactive": 2,
+      "could not tell which outcome is the Kalshi YES outcome": 2
+    }
+  },
+  "divisions": {
+    "elections": {
+      "name": "Elections & Politics",
+      "listed": 372,
+      "aligned": 372,
+      "by_venues": {
+        "Polymarket\u2013Predict.fun": {
+          "listed": 372,
+          "aligned": 372
+        }
+      },
+      "rejected": {},
+      "live": {
+        "pairs": 372,
+        "live_quotes": 0,
+        "live_break_before_fees": 0,
+        "live_edge_after_fees": 0,
+        "live_edge_after_books": 0,
+        "last_trade_prices": 179,
+        "last_trade_edge_after_fees": 137,
+        "fee_quotes_checked": 12,
+        "fee_quote_edge": 0,
+        "not_priced": {
+          "no Predict.fun trades yet": 193
+        }
+      },
+      "recent": {
+        "pairs": 372,
+        "pairs_with_overlap": 17,
+        "minutes": 27,
+        "median_abs_gap": 0.016,
+        "p90_abs_gap": 0.032,
+        "max_abs_gap": 0.264,
+        "share_wide": 0.3333,
+        "by_venues": {
+          "Polymarket\u2013Predict.fun": {
+            "pairs": 372,
+            "pairs_with_overlap": 17,
+            "minutes": 27,
+            "median_abs_gap": 0.016,
+            "p90_abs_gap": 0.032,
+            "max_abs_gap": 0.264,
+            "share_wide": 0.3333
+          }
+        },
+        "widest": [
+          {
+            "relation_id": "kairos:polymarket:666861:predictfun:30939",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Trump out as President before 2027?",
+            "market_b": "Trump out as President before 2027?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.011,
+            "p90_abs_gap": 0.028,
+            "max_abs_gap": 0.028,
+            "share_wide": 0.3333,
+            "problem": null,
+            "division": "Elections & Politics"
+          },
+          {
+            "relation_id": "kairos:polymarket:2695678:predictfun:3011697",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Pedro S\u00e1nchez be the next Prime Minister of Spain?",
+            "market_b": "Will Pedro S\u00e1nchez be the next Prime Minister of Spain?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.006,
+            "p90_abs_gap": 0.011,
+            "max_abs_gap": 0.011,
+            "share_wide": 0.0,
+            "problem": null,
+            "division": "Elections & Politics"
+          }
+        ]
+      },
+      "activity": {
+        "pairs": 40,
+        "venues": {
+          "Polymarket": {
+            "markets": 40,
+            "traded": 32,
+            "median_volume_usd": 1023.07,
+            "volume_usd": 624491.33
+          },
+          "Predict.fun": {
+            "markets": 40,
+            "traded": 3,
+            "median_volume_usd": 1278.86,
+            "volume_usd": 33428.29
+          }
+        }
+      },
+      "settlement": {
+        "checked": 131,
+        "settled": 116,
+        "pending": 15,
+        "agree": 116,
+        "disagree": 0,
+        "agreement_rate": 1.0
+      }
+    },
+    "sports": {
+      "name": "Sports",
+      "listed": 9808,
+      "aligned": 9650,
+      "by_venues": {
+        "Polymarket\u2013Predict.fun": {
+          "listed": 7222,
+          "aligned": 7222
+        },
+        "Kalshi\u2013Polymarket": {
+          "listed": 2118,
+          "aligned": 2106
+        },
+        "Kalshi\u2013Predict.fun": {
+          "listed": 309,
+          "aligned": 306
+        },
+        "Kalshi\u2013Hyperliquid": {
+          "listed": 95,
+          "aligned": 0
+        },
+        "Polymarket\u2013Hyperliquid": {
+          "listed": 48,
+          "aligned": 0
+        },
+        "Predict.fun\u2013Hyperliquid": {
+          "listed": 16,
+          "aligned": 16
+        }
+      },
+      "rejected": {
+        "different dates": 143,
+        "different start times": 7,
+        "could not confirm both markets ask about the same team": 4,
+        "Kalshi market is inactive": 2,
+        "could not tell which outcome is the Kalshi YES outcome": 2
+      },
+      "live": {
+        "pairs": 9650,
+        "live_quotes": 2106,
+        "live_break_before_fees": 27,
+        "live_edge_after_fees": 8,
+        "live_edge_after_books": 4,
+        "last_trade_prices": 735,
+        "last_trade_edge_after_fees": 377,
+        "fee_quotes_checked": 10,
+        "fee_quote_edge": 0,
+        "not_priced": {
+          "no Predict.fun trades yet": 6793,
+          "no live quotes for Hyperliquid yet": 16
+        }
+      },
+      "recent": {
+        "pairs": 9650,
+        "pairs_with_overlap": 641,
+        "minutes": 3196,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.499,
+        "share_wide": 0.2278,
+        "by_venues": {
+          "Kalshi\u2013Polymarket": {
+            "pairs": 2106,
+            "pairs_with_overlap": 407,
+            "minutes": 2037,
+            "median_abs_gap": 0.01,
+            "p90_abs_gap": 0.02,
+            "max_abs_gap": 0.46,
+            "share_wide": 0.218
+          },
+          "Kalshi\u2013Predict.fun": {
+            "pairs": 306,
+            "pairs_with_overlap": 47,
+            "minutes": 336,
+            "median_abs_gap": 0.01,
+            "p90_abs_gap": 0.03,
+            "max_abs_gap": 0.19,
+            "share_wide": 0.2202
+          },
+          "Polymarket\u2013Predict.fun": {
+            "pairs": 7222,
+            "pairs_with_overlap": 180,
+            "minutes": 810,
+            "median_abs_gap": 0.01,
+            "p90_abs_gap": 0.0349,
+            "max_abs_gap": 0.499,
+            "share_wide": 0.258
+          },
+          "Predict.fun\u2013Hyperliquid": {
+            "pairs": 16,
+            "pairs_with_overlap": 7,
+            "minutes": 13,
+            "median_abs_gap": 0.0092,
+            "p90_abs_gap": 0.0197,
+            "max_abs_gap": 0.0242,
+            "share_wide": 0.0769
+          }
+        },
+        "widest": [
+          {
+            "relation_id": "kairos:polymarket:4397241:predictfun:2138299",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Kiin win Worlds 2026 Finals MVP?",
+            "market_b": "Will Kiin win Worlds 2026 Finals MVP?",
+            "start": null,
+            "minutes": 8,
+            "median_abs_gap": 0.0826,
+            "p90_abs_gap": 0.2,
+            "max_abs_gap": 0.2,
+            "share_wide": 0.875,
+            "problem": null,
+            "division": "Sports"
+          },
+          {
+            "relation_id": "kairos:KXUEFANLGAME-26NOV15FRATUR-FRA:6574850",
+            "venues": "Kalshi\u2013Polymarket",
+            "market_a": "France wins",
+            "market_b": "Will France win on 2026-11-15?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.09,
+            "p90_abs_gap": 0.12,
+            "max_abs_gap": 0.12,
+            "share_wide": 0.6667,
+            "problem": null,
+            "division": "Sports"
+          },
+          {
+            "relation_id": "kairos:polymarket:6341596:predictfun:3953579",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Vietnam win on 2026-11-11?",
+            "market_b": "Will Vietnam win on 2026-11-11?",
+            "start": null,
+            "minutes": 8,
+            "median_abs_gap": 0.06,
+            "p90_abs_gap": 0.17,
+            "max_abs_gap": 0.17,
+            "share_wide": 1.0,
+            "problem": null,
+            "division": "Sports"
+          }
+        ]
+      },
+      "activity": {
+        "pairs": 40,
+        "venues": {
+          "Kalshi": {
+            "markets": 7,
+            "traded": 4,
+            "median_volume_usd": 59.39,
+            "volume_usd": 236.68
+          },
+          "Polymarket": {
+            "markets": 40,
+            "traded": 3,
+            "median_volume_usd": 974.45,
+            "volume_usd": 2202.85
+          },
+          "Predict.fun": {
+            "markets": 33,
+            "traded": 2,
+            "median_volume_usd": 293.44,
+            "volume_usd": 586.89
+          }
+        }
+      },
+      "settlement": {
+        "checked": 19114,
+        "settled": 18727,
+        "pending": 387,
+        "agree": 18650,
+        "disagree": 77,
+        "agreement_rate": 0.9959
+      }
+    },
+    "crypto": {
+      "name": "Crypto",
+      "listed": 379,
+      "aligned": 379,
+      "by_venues": {
+        "Polymarket\u2013Predict.fun": {
+          "listed": 379,
+          "aligned": 379
+        }
+      },
+      "rejected": {},
+      "live": {
+        "pairs": 379,
+        "live_quotes": 0,
+        "live_break_before_fees": 0,
+        "live_edge_after_fees": 0,
+        "live_edge_after_books": 0,
+        "last_trade_prices": 267,
+        "last_trade_edge_after_fees": 141,
+        "fee_quotes_checked": 4,
+        "fee_quote_edge": 0,
+        "not_priced": {
+          "no Predict.fun trades yet": 112
+        }
+      },
+      "recent": {
+        "pairs": 379,
+        "pairs_with_overlap": 22,
+        "minutes": 30,
+        "median_abs_gap": 0.0202,
+        "p90_abs_gap": 0.069,
+        "max_abs_gap": 0.141,
+        "share_wide": 0.5333,
+        "by_venues": {
+          "Polymarket\u2013Predict.fun": {
+            "pairs": 379,
+            "pairs_with_overlap": 22,
+            "minutes": 30,
+            "median_abs_gap": 0.0202,
+            "p90_abs_gap": 0.069,
+            "max_abs_gap": 0.141,
+            "share_wide": 0.5333
+          }
+        },
+        "widest": [
+          {
+            "relation_id": "kairos:polymarket:6507414:predictfun:4100363",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Ethereum reach $2,500 in November?",
+            "market_b": "Will Ethereum reach $2,500 in November?",
+            "start": null,
+            "minutes": 4,
+            "median_abs_gap": 0.0219,
+            "p90_abs_gap": 0.03,
+            "max_abs_gap": 0.03,
+            "share_wide": 0.75,
+            "problem": null,
+            "division": "Crypto"
+          },
+          {
+            "relation_id": "kairos:polymarket:637456:predictfun:20129",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Ink FDV above $500M one day after launch?",
+            "market_b": "Ink FDV above $500M one day after launch?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.014,
+            "p90_abs_gap": 0.0153,
+            "max_abs_gap": 0.0153,
+            "share_wide": 0.0,
+            "problem": null,
+            "division": "Crypto"
+          }
+        ]
+      },
+      "activity": {
+        "pairs": 40,
+        "venues": {
+          "Polymarket": {
+            "markets": 40,
+            "traded": 14,
+            "median_volume_usd": 620.43,
+            "volume_usd": 146349.73
+          },
+          "Predict.fun": {
+            "markets": 40,
+            "traded": 4,
+            "median_volume_usd": 53.44,
+            "volume_usd": 216.54
+          }
+        }
+      },
+      "settlement": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      }
+    },
+    "economics": {
+      "name": "Economics & Finance",
+      "listed": 290,
+      "aligned": 290,
+      "by_venues": {
+        "Polymarket\u2013Predict.fun": {
+          "listed": 290,
+          "aligned": 290
+        }
+      },
+      "rejected": {},
+      "live": {
+        "pairs": 290,
+        "live_quotes": 0,
+        "live_break_before_fees": 0,
+        "live_edge_after_fees": 0,
+        "live_edge_after_books": 0,
+        "last_trade_prices": 190,
+        "last_trade_edge_after_fees": 139,
+        "fee_quotes_checked": 14,
+        "fee_quote_edge": 0,
+        "not_priced": {
+          "no Predict.fun trades yet": 100
+        }
+      },
+      "recent": {
+        "pairs": 290,
+        "pairs_with_overlap": 34,
+        "minutes": 67,
+        "median_abs_gap": 0.0118,
+        "p90_abs_gap": 0.06,
+        "max_abs_gap": 0.19,
+        "share_wide": 0.3731,
+        "by_venues": {
+          "Polymarket\u2013Predict.fun": {
+            "pairs": 290,
+            "pairs_with_overlap": 34,
+            "minutes": 67,
+            "median_abs_gap": 0.0118,
+            "p90_abs_gap": 0.06,
+            "max_abs_gap": 0.19,
+            "share_wide": 0.3731
+          }
+        },
+        "widest": [
+          {
+            "relation_id": "kairos:polymarket:6066698:predictfun:3691534",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Anthropic IPO by November 20, 2026?",
+            "market_b": "Will Anthropic IPO by November 20, 2026?",
+            "start": null,
+            "minutes": 4,
+            "median_abs_gap": 0.02,
+            "p90_abs_gap": 0.13,
+            "max_abs_gap": 0.13,
+            "share_wide": 0.75,
+            "problem": null,
+            "division": "Economics & Finance"
+          },
+          {
+            "relation_id": "kairos:polymarket:6882826:predictfun:4445898",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Jensen Huang announced resignation or removal by December 31, 2026?",
+            "market_b": "Jensen Huang announced resignation or removal by December 31?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.027,
+            "p90_abs_gap": 0.029,
+            "max_abs_gap": 0.029,
+            "share_wide": 0.6667,
+            "problem": null,
+            "division": "Economics & Finance"
+          },
+          {
+            "relation_id": "kairos:polymarket:3215007:predictfun:1052063",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+            "market_b": "Will there be no change in Fed interest rates after the December 2026 meeting?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.026,
+            "p90_abs_gap": 0.028,
+            "max_abs_gap": 0.028,
+            "share_wide": 0.6667,
+            "problem": null,
+            "division": "Economics & Finance"
+          }
+        ]
+      },
+      "activity": {
+        "pairs": 40,
+        "venues": {
+          "Polymarket": {
+            "markets": 40,
+            "traded": 29,
+            "median_volume_usd": 764.1,
+            "volume_usd": 213497.75
+          },
+          "Predict.fun": {
+            "markets": 40,
+            "traded": 7,
+            "median_volume_usd": 21.54,
+            "volume_usd": 1567.45
+          }
+        }
+      },
+      "settlement": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      }
+    },
+    "tech": {
+      "name": "Tech & Science",
+      "listed": 117,
+      "aligned": 117,
+      "by_venues": {
+        "Polymarket\u2013Predict.fun": {
+          "listed": 117,
+          "aligned": 117
+        }
+      },
+      "rejected": {},
+      "live": {
+        "pairs": 117,
+        "live_quotes": 0,
+        "live_break_before_fees": 0,
+        "live_edge_after_fees": 0,
+        "live_edge_after_books": 0,
+        "last_trade_prices": 48,
+        "last_trade_edge_after_fees": 35,
+        "fee_quotes_checked": 3,
+        "fee_quote_edge": 0,
+        "not_priced": {
+          "no Predict.fun trades yet": 69
+        }
+      },
+      "recent": {
+        "pairs": 117,
+        "pairs_with_overlap": 7,
+        "minutes": 9,
+        "median_abs_gap": 0.0142,
+        "p90_abs_gap": 0.05,
+        "max_abs_gap": 0.05,
+        "share_wide": 0.3333,
+        "by_venues": {
+          "Polymarket\u2013Predict.fun": {
+            "pairs": 117,
+            "pairs_with_overlap": 7,
+            "minutes": 9,
+            "median_abs_gap": 0.0142,
+            "p90_abs_gap": 0.05,
+            "max_abs_gap": 0.05,
+            "share_wide": 0.3333
+          }
+        },
+        "widest": [
+          {
+            "relation_id": "kairos:polymarket:691340:predictfun:4312922",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "AI bubble burst in 2026?",
+            "market_b": "AI bubble burst in 2026?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.018,
+            "p90_abs_gap": 0.029,
+            "max_abs_gap": 0.029,
+            "share_wide": 0.3333,
+            "problem": null,
+            "division": "Tech & Science"
+          }
+        ]
+      },
+      "activity": {
+        "pairs": 40,
+        "venues": {
+          "Polymarket": {
+            "markets": 40,
+            "traded": 28,
+            "median_volume_usd": 354.62,
+            "volume_usd": 335773.1
+          },
+          "Predict.fun": {
+            "markets": 40,
+            "traded": 5,
+            "median_volume_usd": 43.39,
+            "volume_usd": 402.66
+          }
+        }
+      },
+      "settlement": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      }
+    },
+    "weather": {
+      "name": "Climate & Weather",
+      "listed": 0,
+      "aligned": 0,
+      "by_venues": {},
+      "rejected": {},
+      "live": {
+        "pairs": 0,
+        "live_quotes": 0,
+        "live_break_before_fees": 0,
+        "live_edge_after_fees": 0,
+        "live_edge_after_books": 0,
+        "last_trade_prices": 0,
+        "last_trade_edge_after_fees": 0,
+        "fee_quotes_checked": 0,
+        "fee_quote_edge": 0,
+        "not_priced": {}
+      },
+      "recent": {
+        "pairs": 0,
+        "pairs_with_overlap": 0,
+        "minutes": 0,
+        "median_abs_gap": null,
+        "p90_abs_gap": null,
+        "max_abs_gap": null,
+        "share_wide": null,
+        "by_venues": {},
+        "widest": []
+      },
+      "activity": {
+        "pairs": 0,
+        "venues": {}
+      },
+      "settlement": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      }
+    },
+    "other": {
+      "name": "Other",
+      "listed": 172,
+      "aligned": 172,
+      "by_venues": {
+        "Polymarket\u2013Predict.fun": {
+          "listed": 172,
+          "aligned": 172
+        }
+      },
+      "rejected": {},
+      "live": {
+        "pairs": 172,
+        "live_quotes": 0,
+        "live_break_before_fees": 0,
+        "live_edge_after_fees": 0,
+        "live_edge_after_books": 0,
+        "last_trade_prices": 44,
+        "last_trade_edge_after_fees": 28,
+        "fee_quotes_checked": 7,
+        "fee_quote_edge": 0,
+        "not_priced": {
+          "no Predict.fun trades yet": 128
+        }
+      },
+      "recent": {
+        "pairs": 172,
+        "pairs_with_overlap": 11,
+        "minutes": 41,
+        "median_abs_gap": 0.0044,
+        "p90_abs_gap": 0.04,
+        "max_abs_gap": 0.1,
+        "share_wide": 0.2927,
+        "by_venues": {
+          "Polymarket\u2013Predict.fun": {
+            "pairs": 172,
+            "pairs_with_overlap": 11,
+            "minutes": 41,
+            "median_abs_gap": 0.0044,
+            "p90_abs_gap": 0.04,
+            "max_abs_gap": 0.1,
+            "share_wide": 0.2927
+          }
+        },
+        "widest": [
+          {
+            "relation_id": "kairos:polymarket:6733682:predictfun:4302995",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Dani win the GMGN GGC Season 1 Grand Final?",
+            "market_b": "Will Dani win the GMGN GGC Season 1 Grand Final?",
+            "start": null,
+            "minutes": 3,
+            "median_abs_gap": 0.052,
+            "p90_abs_gap": 0.058,
+            "max_abs_gap": 0.058,
+            "share_wide": 1.0,
+            "problem": null,
+            "division": "Other"
+          },
+          {
+            "relation_id": "kairos:polymarket:6731228:predictfun:4311354",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will Kai Cenat finish his GTA marathon by November 10?",
+            "market_b": "Will Kai Cenat finish his GTA marathon by November 10?",
+            "start": null,
+            "minutes": 6,
+            "median_abs_gap": 0.02,
+            "p90_abs_gap": 0.03,
+            "max_abs_gap": 0.03,
+            "share_wide": 0.6667,
+            "problem": null,
+            "division": "Other"
+          },
+          {
+            "relation_id": "kairos:polymarket:6733683:predictfun:4302997",
+            "venues": "Polymarket\u2013Predict.fun",
+            "market_a": "Will WaiterG win the GMGN GGC Season 1 Grand Final?",
+            "market_b": "Will WaiterG win the GMGN GGC Season 1 Grand Final?",
+            "start": null,
+            "minutes": 4,
+            "median_abs_gap": 0.016,
+            "p90_abs_gap": 0.03,
+            "max_abs_gap": 0.03,
+            "share_wide": 0.25,
+            "problem": null,
+            "division": "Other"
+          }
+        ]
+      },
+      "activity": {
+        "pairs": 40,
+        "venues": {
+          "Polymarket": {
+            "markets": 40,
+            "traded": 25,
+            "median_volume_usd": 60.0,
+            "volume_usd": 45175.94
+          },
+          "Predict.fun": {
+            "markets": 40,
+            "traded": 3,
+            "median_volume_usd": 143.63,
+            "volume_usd": 636.94
+          }
+        }
+      },
+      "settlement": {
+        "checked": 2,
+        "settled": 2,
+        "pending": 0,
+        "agree": 2,
+        "disagree": 0,
+        "agreement_rate": 1.0
+      }
+    }
+  },
+  "other_categories": {
+    "Culture": 172
+  },
+  "scan": {
+    "pairs": 10980,
+    "live_quotes": 2106,
+    "live_break_before_fees": 27,
+    "live_edge_after_fees": 8,
+    "live_edge_after_books": 4,
+    "last_trade_prices": 1463,
+    "last_trade_edge_after_fees": 857,
+    "fee_quotes_checked": 50,
+    "fee_quote_edge": 0,
+    "not_priced": {
+      "no Predict.fun trades yet": 7395,
+      "no live quotes for Hyperliquid yet": 16
+    },
+    "scanned_at": "2026-11-09T22:00:51+00:00",
+    "opportunities": [
+      {
+        "division": "Sports",
+        "venues": "Kalshi\u2013Polymarket",
+        "market_a": "Fabio Manuel Zavalaga Uculmana wins",
+        "market_b": "Lima: Fabio Zavalaga vs Alex Barrena",
+        "basket": "NO on A + YES on B",
+        "contracts": 15.24,
+        "net_edge": 0.17026,
+        "checked_with": "order books",
+        "closes": "2026-11-16"
+      },
+      {
+        "division": "Sports",
+        "venues": "Kalshi\u2013Polymarket",
+        "market_a": "Emilia Carlotta Brune wins",
+        "market_b": "W15 Monastir: Emilia Carlotta Brune vs Yoana Moneva",
+        "basket": "NO on A + YES on B",
+        "contracts": 5.0,
+        "net_edge": 0.0192,
+        "checked_with": "order books",
+        "closes": "2026-11-17"
+      },
+      {
+        "division": "Sports",
+        "venues": "Kalshi\u2013Polymarket",
+        "market_a": "Ema Harajda wins",
+        "market_b": "W15 Sharm ElSheikh: Ema Harajda vs Alexandra Chapurina",
+        "basket": "YES on A + NO on B",
+        "contracts": 0.5,
+        "net_edge": 0.00775,
+        "checked_with": "order books",
+        "closes": "2026-11-17"
+      },
+      {
+        "division": "Sports",
+        "venues": "Kalshi\u2013Polymarket",
+        "market_a": "Kangyuan Shi wins",
+        "market_b": "M15 Maanshan: Kangyuan Shi vs jintao Lan",
+        "basket": "YES on A + NO on B",
+        "contracts": 28.3,
+        "net_edge": 0.00122,
+        "checked_with": "order books",
+        "closes": "2026-11-17"
+      }
+    ]
+  },
+  "around_start": {
+    "pairs": 2269,
+    "pairs_with_overlap": 1046,
+    "problems": {},
+    "minutes": 33389,
+    "median_abs_gap": 0.01,
+    "p90_abs_gap": 0.03,
+    "max_abs_gap": 0.86,
+    "share_wide": 0.2311,
+    "before_start": {
+      "minutes": 5573,
+      "median_abs_gap": 0.01,
+      "p90_abs_gap": 0.01,
+      "max_abs_gap": 0.15,
+      "share_wide": 0.0886
+    },
+    "after_start": {
+      "minutes": 27816,
+      "median_abs_gap": 0.01,
+      "p90_abs_gap": 0.03,
+      "max_abs_gap": 0.86,
+      "share_wide": 0.2596
+    },
+    "by_minutes_from_start": [
+      {
+        "from": -120,
+        "to": -90,
+        "minutes": 726,
+        "median_abs_gap": 0.0,
+        "p90_abs_gap": 0.02,
+        "max_abs_gap": 0.06,
+        "share_wide": 0.1074
+      },
+      {
+        "from": -90,
+        "to": -60,
+        "minutes": 912,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.0143,
+        "max_abs_gap": 0.08,
+        "share_wide": 0.0943
+      },
+      {
+        "from": -60,
+        "to": -30,
+        "minutes": 1395,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.01,
+        "max_abs_gap": 0.15,
+        "share_wide": 0.0824
+      },
+      {
+        "from": -30,
+        "to": 0,
+        "minutes": 2540,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.01,
+        "max_abs_gap": 0.08,
+        "share_wide": 0.0846
+      },
+      {
+        "from": 0,
+        "to": 30,
+        "minutes": 5272,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.39,
+        "share_wide": 0.2453
+      },
+      {
+        "from": 30,
+        "to": 60,
+        "minutes": 5262,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.4524,
+        "share_wide": 0.2446
+      },
+      {
+        "from": 60,
+        "to": 90,
+        "minutes": 5620,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.51,
+        "share_wide": 0.2319
+      },
+      {
+        "from": 90,
+        "to": 120,
+        "minutes": 6201,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.86,
+        "share_wide": 0.25
+      },
+      {
+        "from": 120,
+        "to": 150,
+        "minutes": 2786,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.05,
+        "max_abs_gap": 0.56,
+        "share_wide": 0.3403
+      },
+      {
+        "from": 150,
+        "to": 180,
+        "minutes": 1597,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.04,
+        "max_abs_gap": 0.42,
+        "share_wide": 0.3006
+      },
+      {
+        "from": 180,
+        "to": 210,
+        "minutes": 769,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.05,
+        "max_abs_gap": 0.34,
+        "share_wide": 0.3225
+      },
+      {
+        "from": 210,
+        "to": 240,
+        "minutes": 309,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.058,
+        "max_abs_gap": 0.3455,
+        "share_wide": 0.3625
+      }
+    ],
+    "widest": [
+      {
+        "relation_id": "kairos:KXNBATOTAL-26NOV08NOPLAC-256:6808510",
+        "venues": "Kalshi\u2013Polymarket",
+        "market_a": "Full Game: Over 255.5 points scored",
+        "market_b": "Pelicans vs. Clippers: O/U 255.5",
+        "start": "2026-11-09T02:00:00+00:00",
+        "minutes": 14,
+        "median_abs_gap": 0.05,
+        "p90_abs_gap": 0.11,
+        "max_abs_gap": 0.22,
+        "share_wide": 0.6429,
+        "problem": null,
+        "division": "Sports"
+      },
+      {
+        "relation_id": "kairos:polymarket:6873687:predictfun:4425235",
+        "venues": "Polymarket\u2013Predict.fun",
+        "market_a": "Counter-Strike: Alliance vs PRIVATE - Map 2 Winner",
+        "market_b": "Counter-Strike: Alliance vs PRIVATE - Map 2 Winner",
+        "start": "2026-11-08T18:00:00+00:00",
+        "minutes": 12,
+        "median_abs_gap": 0.04,
+        "p90_abs_gap": 0.0746,
+        "max_abs_gap": 0.1624,
+        "share_wide": 0.6667,
+        "problem": null,
+        "division": "Sports"
+      },
+      {
+        "relation_id": "kairos:polymarket:6883966:predictfun:4433986",
+        "venues": "Polymarket\u2013Predict.fun",
+        "market_a": "Dota 2: Nemiga Gaming vs Zenith - Game 2 Winner",
+        "market_b": "Dota 2: Nemiga Gaming vs Zenith - Game 2 Winner",
+        "start": "2026-11-09T13:40:00+00:00",
+        "minutes": 10,
+        "median_abs_gap": 0.04,
+        "p90_abs_gap": 0.1,
+        "max_abs_gap": 0.241,
+        "share_wide": 0.7,
+        "problem": null,
+        "division": "Sports"
+      },
+      {
+        "relation_id": "kairos:polymarket:6885669:predictfun:4435485",
+        "venues": "Polymarket\u2013Predict.fun",
+        "market_a": "Dota 2: angry birds vs Ka4kanarskie cyxariki (BO3) - 1win Essence Play-in Group A",
+        "market_b": "Dota 2: angry birds vs Ka4kanarskie cyxariki (BO3) - 1win Essence Play-in Group A",
+        "start": "2026-11-09T13:10:00+00:00",
+        "minutes": 10,
+        "median_abs_gap": 0.0285,
+        "p90_abs_gap": 0.19,
+        "max_abs_gap": 0.24,
+        "share_wide": 0.8,
+        "problem": null,
+        "division": "Sports"
+      },
+      {
+        "relation_id": "kairos:polymarket:6873686:predictfun:4425233",
+        "venues": "Polymarket\u2013Predict.fun",
+        "market_a": "Counter-Strike: Alliance vs PRIVATE - Map 1 Winner",
+        "market_b": "Counter-Strike: Alliance vs PRIVATE - Map 1 Winner",
+        "start": "2026-11-08T18:00:00+00:00",
+        "minutes": 10,
+        "median_abs_gap": 0.037,
+        "p90_abs_gap": 0.1059,
+        "max_abs_gap": 0.1088,
+        "share_wide": 0.7,
+        "problem": null,
+        "division": "Sports"
+      }
+    ],
+    "wide_gap": 0.02,
+    "by_venues": {
+      "Kalshi\u2013Polymarket": {
+        "pairs": 659,
+        "pairs_with_overlap": 589,
+        "minutes": 23850,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.86,
+        "share_wide": 0.2368
+      },
+      "Kalshi\u2013Predict.fun": {
+        "pairs": 126,
+        "pairs_with_overlap": 0,
+        "minutes": 0,
+        "median_abs_gap": null,
+        "p90_abs_gap": null,
+        "max_abs_gap": null,
+        "share_wide": null
+      },
+      "Polymarket\u2013Predict.fun": {
+        "pairs": 1481,
+        "pairs_with_overlap": 457,
+        "minutes": 9539,
+        "median_abs_gap": 0.01,
+        "p90_abs_gap": 0.03,
+        "max_abs_gap": 0.51,
+        "share_wide": 0.2167
+      },
+      "Predict.fun\u2013Hyperliquid": {
+        "pairs": 3,
+        "pairs_with_overlap": 0,
+        "minutes": 0,
+        "median_abs_gap": null,
+        "p90_abs_gap": null,
+        "max_abs_gap": null,
+        "share_wide": null
+      }
+    }
+  },
+  "settlement": {
+    "checked": 19247,
+    "settled": 18845,
+    "pending": 402,
+    "agree": 18768,
+    "disagree": 77,
+    "agreement_rate": 0.9959,
+    "mismatches": [
+      {
+        "relation_id": "kairos:kalshi:KXWTAMATCH-26OCT19KAWCHW-KAW:predictfun:3519711",
+        "relation": "same_event",
+        "venues": "kalshi + predictfun",
+        "market_a": "Katarzyna Kawa wins",
+        "market_b": "Ningbo Open: Katarzyna Kawa vs Maja Chwalinska",
+        "a_first_outcome_paid": 0.26,
+        "b_first_outcome_paid": 0.5,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:kalshi:KXATPMATCH-26OCT21BUBMAR-BUB:predictfun:3606535",
+        "relation": "same_event",
+        "venues": "kalshi + predictfun",
+        "market_a": "Alexander Bublik wins",
+        "market_b": "Almaty Open: Alexander Bublik vs Fabian Marozsan",
+        "a_first_outcome_paid": 0.72,
+        "b_first_outcome_paid": 0.5,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:kalshi:KXUFCFIGHT-26OCT31BEKPET-PET:predictfun:3469980",
+        "relation": "same_event",
+        "venues": "kalshi + predictfun",
+        "market_a": "Andre Petroski wins",
+        "market_b": "UFC Fight Night: Andre Petroski vs. Azamat Bekoev (Middleweight, Prelims)",
+        "a_first_outcome_paid": 0.4,
+        "b_first_outcome_paid": 0.5,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:KXATPMATCH-26NOV01DAVKOU-DAV:6454194",
+        "relation": "same_event",
+        "venues": "kalshi + polymarket",
+        "market_a": "Alejandro Davidovich Fokina wins",
+        "market_b": "Rolex Paris Masters: Alejandro Davidovich Fokina vs Moise Kouame",
+        "a_first_outcome_paid": 0.74,
+        "b_first_outcome_paid": 0.5,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:KXATPMATCH-26NOV01TSITIE-TSI:6454086",
+        "relation": "same_event",
+        "venues": "kalshi + polymarket",
+        "market_a": "Stefanos Tsitsipas wins",
+        "market_b": "Rolex Paris Masters: Stefanos Tsitsipas vs Learner Tien",
+        "a_first_outcome_paid": 0.45,
+        "b_first_outcome_paid": 0.5,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:KXSAUDIPLGAME-26NOV05ABHSHA-ABH:6490329",
+        "relation": "same_event",
+        "venues": "kalshi + polymarket",
+        "market_a": "Abha wins",
+        "market_b": "Will Abha Saudi Club win on 2026-11-05?",
+        "a_first_outcome_paid": 0.19,
+        "b_first_outcome_paid": 0.0,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:KXSAUDIPLGAME-26NOV05ABHSHA-SHA:6490333",
+        "relation": "same_event",
+        "venues": "kalshi + polymarket",
+        "market_a": "Al-Shabab wins",
+        "market_b": "Will Al Shabab Saudi Club win on 2026-11-05?",
+        "a_first_outcome_paid": 0.59,
+        "b_first_outcome_paid": 0.0,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:KXSAUDIPLGAME-26NOV05ABHSHA-TIE:6490331",
+        "relation": "same_event",
+        "venues": "kalshi + polymarket",
+        "market_a": "Tie is the result",
+        "market_b": "Will Abha Saudi Club vs. Al Shabab Saudi Club end in a draw?",
+        "a_first_outcome_paid": 0.22,
+        "b_first_outcome_paid": 1.0,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:kalshi:KXSAUDIPLGAME-26NOV05ABHSHA-TIE:predictfun:4084459",
+        "relation": "same_event",
+        "venues": "kalshi + predictfun",
+        "market_a": "Tie is the result",
+        "market_b": "Will Abha Saudi Club vs. Al Shabab Saudi Club end in a draw?",
+        "a_first_outcome_paid": 0.22,
+        "b_first_outcome_paid": 1.0,
+        "agrees": false
+      },
+      {
+        "relation_id": "kairos:KXCS2GAME-26NOV031230FIREOLD-OLD:5952282",
+        "relation": "same_event",
+        "venues": "kalshi + polymarket",
+        "market_a": "OLDBOYS- wins",
+        "market_b": "Counter-Strike: OLDBOYS- vs Fire Flux Esports (BO1) - ESEA Advanced Europe Regular Season",
+        "a_first_outcome_paid": 0.2,
+        "b_first_outcome_paid": 0.5,
+        "agrees": false
+      }
+    ],
+    "by_division": {
+      "elections": {
+        "checked": 131,
+        "settled": 116,
+        "pending": 15,
+        "agree": 116,
+        "disagree": 0,
+        "agreement_rate": 1.0
+      },
+      "sports": {
+        "checked": 19114,
+        "settled": 18727,
+        "pending": 387,
+        "agree": 18650,
+        "disagree": 77,
+        "agreement_rate": 0.9959
+      },
+      "crypto": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      },
+      "economics": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      },
+      "tech": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      },
+      "weather": {
+        "checked": 0,
+        "settled": 0,
+        "pending": 0,
+        "agree": 0,
+        "disagree": 0,
+        "agreement_rate": null
+      },
+      "other": {
+        "checked": 2,
+        "settled": 2,
+        "pending": 0,
+        "agree": 2,
+        "disagree": 0,
+        "agreement_rate": 1.0
+      }
+    },
+    "by_venue": {
+      "Kalshi": {
+        "asked": 6154,
+        "resolved": 6082
+      },
+      "Polymarket": {
+        "asked": 18633,
+        "resolved": 18327
+      },
+      "Predict.fun": {
+        "asked": 13686,
+        "resolved": 13404
+      },
+      "Hyperliquid": {
+        "asked": 21,
+        "resolved": 0
+      }
+    }
+  },
+  "notes": [
+    "No matched pairs in Climate & Weather.",
+    "Every Kalshi pair (2,522) is Sports.",
+    "Every Hyperliquid pair (159) is Sports.",
+    "546 pairs carry a different category on each side (451 of them point to different divisions); for example \"Adam Bajurko wins\" is Sports on Kalshi and Crypto on Polymarket; \"Manuel Plunger wins\" is Sports on Kalshi and Culture on Polymarket; \"Israel wins\" is Sports on Kalshi and World on Polymarket.",
+    "4,425 pairs have a category on one side only (side without one: Polymarket 4,425).",
+    "95 Kalshi\u2013Hyperliquid pairs are matched across different dates; for example \"Charlotte wins\" and \"NBA Regular Season: Charlotte Hornets v Cleveland Cavaliers\" (Kalshi 2026-11-09, Hyperliquid 2026-11-16).",
+    "48 Polymarket\u2013Hyperliquid pairs are matched across different dates; for example \"Will T\u00fcrkiye win on 2026-11-12?\" and \"UEFA Nations League A, Matchday 5: Turkiye v Belgium: Turkiye\" (Polymarket 2026-11-12, Hyperliquid 2026-11-19).",
+    "7 Kalshi\u2013Polymarket pairs are matched across different start times; for example \"RED Canids Academy wins\" and \"Counter-Strike: RED Canids Academy vs Gr\u00eamio Esports (BO3) - Gamers Club Liga S\u00e9rie A Playoffs\" (Kalshi 2026-11-08 19:00Z, Polymarket 2026-11-09 19:15Z).",
+    "8 more pairs could not be confirmed automatically and were left out (see \"Not lined up\" above).",
+    "7,395 of 8,874 pairs with a Predict.fun side have no Predict.fun trades yet (no mark), so they cannot be priced.",
+    "No resolutions came back for Hyperliquid (21 markets whose events started 6 hours to 7 days before the report)."
+  ],
+  "archive_pairs": 93414,
+  "with_key": true,
+  "activity_sample": 40
+}
