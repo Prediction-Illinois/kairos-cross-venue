@@ -737,8 +737,8 @@ def markdown(data: dict[str, Any], day: str, drawn: Mapping[str, bool], *, chart
     lines = [
         f'# Kairos cross-venue report, {day}',
         '',
-        f"Generated {data['generated_at'][:16].replace('T', ' ')} UTC from Kairos's matched-market "
-        f"catalog, Market Data API{' and fee quotes' if data.get('with_key') else ''}, and Kalshi "
+        f"Generated {data['generated_at'][:16].replace('T', ' ')} UTC from Kairos's catalog of "
+        f"linked markets, Market Data API{' and fee quotes' if data.get('with_key') else ''}, and Kalshi "
         'and Polymarket order books. Pairs are grouped into '
         "[Prediction@Illinois](https://prediction-illinois.github.io)'s six market divisions by "
         "Kairos's own categories.",
