@@ -1,47 +1,39 @@
-# Kairos cross-venue report, 2026-11-11
+# Kairos cross-venue report, 2026-11-16
 
-Generated 2026-11-11 19:18 UTC from Kairos's matched-market catalog, Market Data API and fee quotes, and Kalshi and Polymarket order books. Pairs are grouped into [Prediction@Illinois](https://prediction-illinois.github.io)'s six market divisions by Kairos's own categories.
+Generated 2026-11-16 00:07 UTC from Kairos's matched-market catalog, Market Data API and fee quotes, and Kalshi and Polymarket order books. Pairs are grouped into [Prediction@Illinois](https://prediction-illinois.github.io)'s six market divisions by Kairos's own categories.
 
 ## Overview
 
 | Division | Pairs Kairos lists | Lined up | Edge after fees, confirmed | Median gap, last 24 h | Settled the same way, last 7 days |
 |---|---|---|---|---|---|
-| Elections & Politics | 394 | 394 | 1 of 179 | 1.0¢ (12 pairs) | 2 of 2 |
-| Sports | 12,042 | 11,882 | 2 of 3,182 | 1.0¢ (774 pairs) | 17,897 of 17,994 |
-| Crypto | 385 | 385 | 0 of 276 | 1.3¢ (20 pairs) | – |
-| Economics & Finance | 315 | 315 | 0 of 191 | 0.8¢ (42 pairs) | – |
-| Tech & Science | 98 | 98 | 0 of 50 | 1.7¢ (7 pairs) | 4 of 4 |
+| Elections & Politics | 0 | 0 | – | – | 2 of 2 |
+| Sports | 2,602 | 2,309 | 2 of 1,080 | 1.0¢ (339 pairs) | 11,507 of 11,553 |
+| Crypto | 0 | 0 | – | – | – |
+| Economics & Finance | 0 | 0 | – | – | 1 of 1 |
+| Tech & Science | 0 | 0 | – | – | 10 of 10 |
 | Climate & Weather | 0 | 0 | – | – | – |
-
-Another 228 pairs fall outside the six divisions (Culture 221, no category 7).
 
 ## Pairs
 
-Kairos listed 13,462 matched pairs across 6 venue combinations; oracle3-extras lined up the outcomes of 13,295 (99%), 66 of them with a warning such as a postponed game.
+Kairos listed 2,602 matched pairs across 6 venue combinations; oracle3-extras lined up the outcomes of 2,309 (89%), 0 of them with a warning such as a postponed game.
 
 ![Pairs by division](img/pairs-by-division.png)
 
 | Division | Venues | Lined up |
 |---|---|---|
-| Elections & Politics | Polymarket–Predict.fun | 394 of 394 |
-| Sports | Polymarket–Predict.fun | 9,362 of 9,362 |
-| Sports | Kalshi–Polymarket | 2,176 of 2,181 |
-| Sports | Kalshi–Predict.fun | 325 of 327 |
-| Sports | Kalshi–Hyperliquid | 0 of 103 |
-| Sports | Polymarket–Hyperliquid | 0 of 50 |
-| Sports | Predict.fun–Hyperliquid | 19 of 19 |
-| Crypto | Polymarket–Predict.fun | 385 of 385 |
-| Economics & Finance | Polymarket–Predict.fun | 315 of 315 |
-| Tech & Science | Polymarket–Predict.fun | 98 of 98 |
-| Other | Polymarket–Predict.fun | 221 of 221 |
-| Other | Polymarket–Hyperliquid | 0 of 7 |
+| Sports | Polymarket–Predict.fun | 1,147 of 1,147 |
+| Sports | Kalshi–Polymarket | 802 of 808 |
+| Sports | Kalshi–Predict.fun | 327 of 491 |
+| Sports | Kalshi–Hyperliquid | 0 of 53 |
+| Sports | Predict.fun–Hyperliquid | 33 of 52 |
+| Sports | Polymarket–Hyperliquid | 0 of 51 |
 
 | Not lined up | Pairs |
 |---|---|
-| different dates | 160 |
-| could not confirm both markets ask about the same team | 4 |
-| could not tell which outcome is the Kalshi YES outcome | 2 |
-| different start times | 1 |
+| could not confirm both markets ask about the same team | 164 |
+| different dates | 107 |
+| could not line up the outcomes | 19 |
+| different start times | 3 |
 
 ## Live check
 
@@ -49,20 +41,14 @@ Each pair is priced on both venues and checked for a basket that pays more than 
 
 | Division | Priced on live books | Edge after fees | Left after the books | Priced from last trades | Edge on last trades | Checked with fee quotes | Confirmed |
 |---|---|---|---|---|---|---|---|
-| Elections & Politics | 0 | 0 | 0 | 179 | 145 | 13 | 1 |
-| Sports | 2,176 | 14 | 2 | 1,006 | 430 | 10 | 0 |
-| Crypto | 0 | 0 | 0 | 276 | 149 | 4 | 0 |
-| Economics & Finance | 0 | 0 | 0 | 191 | 143 | 14 | 0 |
-| Tech & Science | 0 | 0 | 0 | 50 | 33 | 3 | 0 |
-| Other | 0 | 0 | 0 | 37 | 24 | 6 | 0 |
+| Sports | 802 | 5 | 2 | 278 | 70 | 50 | 0 |
 
-Not priced: no Predict.fun trades yet 9,361; no live quotes for Hyperliquid yet 19.
+Not priced: no Predict.fun trades yet 1,196; no live quotes for Hyperliquid yet 33.
 
 | Division | Venues | Market A | Market B | Basket | Contracts | Net edge | Checked with | Closes |
 |---|---|---|---|---|---|---|---|---|
-| Sports | Kalshi–Polymarket | Time to Sleep wins | Dota 2: Time to Sleep vs CyberHero (BO3) - Asgard Championship Group B | YES on A + NO on B | 1488.52 | $7.6559 | order books | 2026-11-12 |
-| Elections & Politics | Polymarket–Predict.fun | Will James Talarico win the 2028 US Presidential Election? | Will James Talarico win the 2028 US Presidential Election? | YES on A + NO on B | 10.0 | $0.0294 | Kairos fee quotes | 2028-11-08 |
-| Sports | Kalshi–Polymarket | Edmonton wins | Oilers vs. Panthers | NO on A + YES on B | 1.0 | $0.0002 | order books | 2026-11-18 |
+| Sports | Kalshi–Polymarket | Suraj R Prabodh wins | M25 Bhubaneswar: Suraj R Prabodh vs Amrutjay Mohanty | YES on A + NO on B | 8.0 | $0.0294 | order books | 2026-11-23 |
+| Sports | Kalshi–Polymarket | Carolina wins | Hurricanes vs. Rangers | NO on A + YES on B | 1.0 | $0.0110 | order books | 2026-11-22 |
 
 Net edge is for all the contracts together. It assumes every leg fills at the prices used, both markets settle the same way, and money tied up until settlement costs nothing, which matters for markets that close years from now. Closes is the earlier of the two markets' closing times.
 
@@ -76,54 +62,39 @@ For every pair, both venues' last trades in each hour of the last 24 hours, up t
 
 | Division | Pairs compared | Hours compared | Median gap | 90th percentile | Hours 2¢ or more apart |
 |---|---|---|---|---|---|
-| Elections & Politics | 12 | 19 | 1.0¢ | 4.0¢ | 37% |
-| Sports | 774 | 3,355 | 1.0¢ | 2.0¢ | 20% |
-| Crypto | 20 | 23 | 1.3¢ | 7.9¢ | 43% |
-| Economics & Finance | 42 | 126 | 0.8¢ | 6.7¢ | 27% |
-| Tech & Science | 7 | 12 | 1.7¢ | 7.8¢ | 50% |
-| Other | 8 | 26 | 0.4¢ | 5.4¢ | 27% |
+| Sports | 339 | 1,216 | 1.0¢ | 3.0¢ | 27% |
 
 | Division | Venues | Pairs compared | Median gap | 90th percentile |
 |---|---|---|---|---|
-| Elections & Politics | Polymarket–Predict.fun | 12 | 1.0¢ | 4.0¢ |
-| Sports | Kalshi–Polymarket | 448 | 1.0¢ | 2.0¢ |
-| Sports | Kalshi–Predict.fun | 60 | 1.0¢ | 2.0¢ |
-| Sports | Polymarket–Predict.fun | 261 | 1.0¢ | 2.0¢ |
-| Sports | Predict.fun–Hyperliquid | 5 | 1.1¢ | 1.6¢ |
-| Crypto | Polymarket–Predict.fun | 20 | 1.3¢ | 7.9¢ |
-| Economics & Finance | Polymarket–Predict.fun | 42 | 0.8¢ | 6.7¢ |
-| Tech & Science | Polymarket–Predict.fun | 7 | 1.7¢ | 7.8¢ |
-| Other | Polymarket–Predict.fun | 8 | 0.4¢ | 5.4¢ |
+| Sports | Kalshi–Polymarket | 227 | 1.0¢ | 4.0¢ |
+| Sports | Kalshi–Predict.fun | 25 | 1.0¢ | 3.0¢ |
+| Sports | Polymarket–Predict.fun | 70 | 1.0¢ | 2.0¢ |
+| Sports | Predict.fun–Hyperliquid | 17 | 1.2¢ | 3.6¢ |
 
 | Most persistent gaps (at least 3 hours compared) | Division | Venues | Median gap | Hours |
 |---|---|---|---|---|
-| Dota 2: Cooman Team vs LenS Team (BO3) - Media Eleague Playoffs | Sports | Kalshi–Predict.fun | 9.0¢ | 3 |
-| Will Anthropic’s market cap be 1.8T or greater at market close on IPO day by December 31 2027? | Economics & Finance | Polymarket–Predict.fun | 7.1¢ | 4 |
-| Next White House Press Secretary announced by November 30, 2026? | Elections & Politics | Polymarket–Predict.fun | 4.0¢ | 3 |
-| Dota 2: Power Rangers vs angry birds (BO3) - 1win Essence Play-in Group A | Sports | Kalshi–Predict.fun | 4.0¢ | 4 |
-| Jensen Huang divorce by March 31, 2027? | Other | Polymarket–Predict.fun | 4.0¢ | 3 |
-| Will Anthropic's valuation hit (HIGH) $2.0T by December 31? | Economics & Finance | Polymarket–Predict.fun | 3.6¢ | 3 |
-| Will Anthropic's valuation hit (HIGH) $1.5T by December 31? | Economics & Finance | Polymarket–Predict.fun | 2.3¢ | 4 |
-| Dota 2: Team Lynx vs Team Synapse (BO3) - Asgard Championship Group B | Sports | Kalshi–Predict.fun | 2.0¢ | 4 |
+| Tennessee Tech vs. Mississippi State | Sports | Kalshi–Polymarket | 6.0¢ | 3 |
+| M25 Vale do Lobo: Duarte Lima Sanches vs Yanis Peterhans | Sports | Kalshi–Polymarket | 5.0¢ | 4 |
+| Counter-Strike: Galorys vs BARCA (BO3) - CCT South America Playoffs | Sports | Kalshi–Predict.fun | 3.0¢ | 4 |
 
 ## Sports around game time
 
-Games that started 6 to 30 hours ago: 932 of 1,435 pairs traded on both venues in the same minute, 23,874 minutes in all. The median gap between the two last trades was 1.0¢ and the 90th percentile 4.0¢; before the start the 90th percentile was 2.0¢.
+Games that started 6 to 30 hours ago: 785 of 1,959 pairs traded on both venues in the same minute, 22,214 minutes in all. The median gap between the two last trades was 1.0¢ and the 90th percentile 2.0¢; before the start the 90th percentile was 2.0¢.
 
 ![Gap around game time](img/gap-by-minute.png)
 
 | Venues | Pairs compared | Minutes | Median gap | 90th percentile |
 |---|---|---|---|---|
-| Kalshi–Polymarket | 623 | 18,945 | 1.0¢ | 4.0¢ |
-| Polymarket–Predict.fun | 309 | 4,929 | 1.0¢ | 4.6¢ |
+| Kalshi–Polymarket | 415 | 15,019 | 1.0¢ | 2.0¢ |
+| Polymarket–Predict.fun | 370 | 7,195 | 1.0¢ | 2.2¢ |
 
 | Most persistent gaps (at least 10 minutes compared) | Venues | Median gap | Largest | Minutes |
 |---|---|---|---|---|
-| AHL: Colorado Eagles vs. Abbotsford Canucks | Kalshi–Polymarket | 9.7¢ | 27¢ | 14 |
-| Clippers vs. Suns: O/U 240.5 | Kalshi–Polymarket | 4.8¢ | 32¢ | 10 |
-| W15 Lincoln, NE: Rinon Okuwaki vs Neda Rahimkhani | Kalshi–Polymarket | 4.0¢ | 59¢ | 14 |
-| Valorant: Frankfurt Bahnhofsviertel vs CGN Esports (BO3) - Spike Series Convergence EMEA - DACH Group A | Kalshi–Polymarket | 5.0¢ | 15¢ | 10 |
-| Dota 2: Rottweilas Latam vs Mena Warriors - Game 2 Winner | Polymarket–Predict.fun | 4.9¢ | 13¢ | 15 |
+| UFC 334: Evan Elder vs. Samuel Sanches (Lightweight, Early Prelims) | Polymarket–Predict.fun | 4.0¢ | 10¢ | 10 |
+| Campbell vs. Elon | Kalshi–Polymarket | 3.0¢ | 17¢ | 20 |
+| McNeese vs. Southeastern Louisiana | Kalshi–Polymarket | 3.0¢ | 11¢ | 13 |
+| ICC Women's Emerging Nations Trophy T20s: Thailand Women vs Zimbabwe Women | Polymarket–Predict.fun | 3.0¢ | 6.0¢ | 12 |
+| NJIT Highlanders vs. Fairfield Stags | Kalshi–Polymarket | 3.0¢ | 16¢ | 13 |
 
 These are trade prices up to a minute apart, not quotes: a gap shows the venues disagreeing, not an arbitrage that could have been executed.
 
@@ -133,67 +104,61 @@ These are trade prices up to a minute apart, not quotes: a gap shows the venues 
 
 | Division | Venue | Markets sampled | Traded in the last 24 h | Median 24 h volume of those |
 |---|---|---|---|---|
-| Elections & Politics | Polymarket | 40 | 19 of 40 | $1,318 |
-| Elections & Politics | Predict.fun | 40 | 1 of 40 | $336 |
-| Sports | Kalshi | 11 | 7 of 11 | $109 |
-| Sports | Polymarket | 38 | 5 of 38 | $243 |
-| Sports | Predict.fun | 31 | 1 of 31 | $1,319 |
-| Crypto | Polymarket | 40 | 12 of 40 | $555 |
-| Crypto | Predict.fun | 40 | 1 of 40 | $388 |
-| Economics & Finance | Polymarket | 40 | 25 of 40 | $538 |
-| Economics & Finance | Predict.fun | 40 | 7 of 40 | $29.54 |
-| Tech & Science | Polymarket | 40 | 16 of 40 | $366 |
-| Tech & Science | Predict.fun | 40 | 0 of 40 | – |
-| Other | Polymarket | 40 | 17 of 40 | $79.21 |
-| Other | Predict.fun | 40 | 0 of 40 | – |
+| Sports | Kalshi | 20 | 13 of 20 | $31.35 |
+| Sports | Polymarket | 35 | 12 of 35 | $126 |
+| Sports | Predict.fun | 25 | 2 of 25 | $387 |
 
 ## Settlement
 
-Events that started in the last seven days: 18,006 pairs have settled on both venues and 17,909 settled the same way (99%); 199 are still settling or have no result from Kairos.
+Events that started in the last seven days: 11,630 pairs have settled on both venues and 11,584 settled the same way (100%); 204 are still settling or have no result from Kairos.
 
 | Division | Settled on both venues | Same way | Still settling |
 |---|---|---|---|
-| Elections & Politics | 2 | 2 | 2 |
-| Sports | 17,994 | 17,897 | 197 |
-| Tech & Science | 4 | 4 | 0 |
-| Other | 6 | 6 | 0 |
+| Elections & Politics | 2 | 2 | 0 |
+| Sports | 11,553 | 11,507 | 204 |
+| Economics & Finance | 1 | 1 | 0 |
+| Tech & Science | 10 | 10 | 0 |
+| Other | 64 | 64 | 0 |
 
 | Venue | Markets looked up | Resolved |
 |---|---|---|
-| Kalshi | 6,239 | 6,205 |
-| Polymarket | 17,426 | 17,303 |
-| Predict.fun | 12,719 | 12,623 |
-| Hyperliquid | 26 | 0 |
+| Kalshi | 3,999 | 3,999 |
+| Polymarket | 11,128 | 10,969 |
+| Predict.fun | 8,512 | 8,354 |
+| Hyperliquid | 29 | 0 |
 
 | Market A | Market B | Venues | A first outcome paid | B first outcome paid |
 |---|---|---|---|---|
-| Abha wins | Will Abha Saudi Club win on 2026-11-05? | kalshi + polymarket | 0.19 | 0.0 |
-| Al-Shabab wins | Will Al Shabab Saudi Club win on 2026-11-05? | kalshi + polymarket | 0.59 | 0.0 |
-| Tie is the result | Will Abha Saudi Club vs. Al Shabab Saudi Club end in a draw? | kalshi + polymarket | 0.22 | 1.0 |
-| Tie is the result | Will Abha Saudi Club vs. Al Shabab Saudi Club end in a draw? | kalshi + predictfun | 0.22 | 1.0 |
-| Al-Fayha wins | Will Al Fayha Saudi Club win on 2026-11-05? | kalshi + polymarket | 0.08 | 0.0 |
-| Al Qadsiah wins | Will Al Qadisiyah Saudi Club win on 2026-11-05? | kalshi + polymarket | 0.69 | 0.0 |
-| Tie is the result | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club end in a draw? | kalshi + polymarket | 0.23 | 1.0 |
-| Tie is the result | Will Al Qadisiyah Saudi Club vs. Al Fayha Saudi Club end in a draw? | kalshi + predictfun | 0.23 | 1.0 |
-| Al-Fateh wins | Will Al Fateh Saudi Club win on 2026-11-06? | kalshi + polymarket | 0.4 | 0.0 |
-| Al-Riyadh wins | Will Al Riyadh Saudi Club win on 2026-11-06? | kalshi + polymarket | 0.23 | 0.0 |
+| Alejandro Davidovich Fokina wins | Rolex Paris Masters: Alejandro Davidovich Fokina vs Moise Kouame | kalshi + predictfun | 0.74 | 0.5 |
+| Daniel Merida wins | Rolex Paris Masters: Daniel Merida Aguilar vs Alexander Blockx | kalshi + predictfun | 0.42 | 0.5 |
+| Stefanos Tsitsipas wins | Rolex Paris Masters: Stefanos Tsitsipas vs Learner Tien | kalshi + predictfun | 0.45 | 0.5 |
+| Tie is the result | Will Al Faisaly Saudi Club vs. Al Diraiyah Saudi Club end in a draw? | kalshi + predictfun | 0.37 | 1.0 |
+| Nazim Sadykhov wins | UFC 334: Nazim Sadykhov vs. Jefferson Nascimento (Lightweight, Early Prelims) | kalshi + polymarket | 0.7 | 0.5 |
+| Adrian Yanez wins | UFC 334: Adrian Yañez vs. Juan Diaz (Bantamweight, Early Prelims) | kalshi + polymarket | 0.53 | 0.5 |
+| G2 Ares wins | Counter-Strike: G2 Ares vs Saint Sinners (BO3) - European Pro League Group D | kalshi + predictfun | 0.52 | 0.5 |
+| Froglings wins | Dota 2: Froglings vs Astra Invicta (BO3) - 1win Essence Play-in Group A | kalshi + predictfun | 0.31 | 0.5 |
+| thirst for victory wins | Valorant: thirst for victory vs SETOUCHI SPARKS (BO3) - Asia Pacific Predator League Japan Playoffs | kalshi + predictfun | 0.36 | 0.5 |
+| Xipto Esports wins | Dota 2: Xipto Esports vs angry birds (BO3) - Asgard Championship Group A | kalshi + predictfun | 0.64 | 1.0 |
 
 ## Notes for Kairos
 
-- No matched pairs in Climate & Weather.
-- Every Kalshi pair (2,611) is Sports.
-- 633 pairs carry a different category on each side (547 of them point to different divisions); for example "Oscar Brown wins" is Sports on Kalshi and Culture on Polymarket; "Rudolf Molleker wins" is Sports on Kalshi and Crypto on Polymarket; "Israel wins" is Sports on Kalshi and World on Polymarket.
-- 5,275 pairs have a category on one side only (side without one: Polymarket 5,275).
-- 103 Kalshi–Hyperliquid pairs are matched across different dates; for example "New Orleans wins" and "NBA Regular Season: New Orleans Pelicans v Brooklyn Nets" (Kalshi 2026-11-11, Hyperliquid 2026-11-18).
-- 57 Polymarket–Hyperliquid pairs are matched across different dates; for example "Will Türkiye win on 2026-11-12?" and "UEFA Nations League A, Matchday 5: Turkiye v Belgium: Turkiye" (Polymarket 2026-11-12, Hyperliquid 2026-11-19).
-- 1 Kalshi–Polymarket pairs are matched across different start times; for example "CyberHero wins" and "Dota 2: CyberHero vs Zero Tenacity (BO3) - DreamLeague Division 2 Group B" (Kalshi 2026-11-11 13:00Z, Polymarket 2026-11-11 16:50Z).
-- 6 more pairs could not be confirmed automatically and were left out (see "Not lined up" above).
-- 9,361 of 11,119 pairs with a Predict.fun side have no Predict.fun trades yet (no mark), so they cannot be priced.
-- No resolutions came back for Hyperliquid (26 markets whose events started 6 hours to 7 days before the report).
+- No matched pairs in Elections & Politics, Crypto, Economics & Finance, Tech & Science, and Climate & Weather.
+- Every Kalshi pair (1,352) is Sports.
+- Every Polymarket pair (2,006) is Sports.
+- Every Predict.fun pair (1,690) is Sports.
+- Every Hyperliquid pair (156) is Sports.
+- 106 pairs carry a different category on each side (20 of them point to different divisions); for example "UEFA Nations League A, Matchday 6: Germany v Netherlands: Netherlands" is Sports on Hyperliquid and Crypto on Polymarket.
+- 619 pairs have a category on one side only (side without one: Polymarket 619).
+- 53 Kalshi–Hyperliquid pairs are matched across different dates; for example "UEFA Nations League B, Matchday 6: Switzerland v Scotland: Switzerland" and "Switzerland wins" (Kalshi 2026-11-16, Hyperliquid 2026-11-23).
+- 51 Polymarket–Hyperliquid pairs are matched across different dates; for example "UEFA Nations League B, Matchday 6: Switzerland v Scotland: Switzerland" and "Will Switzerland win on 2026-11-16?" (Polymarket 2026-11-16, Hyperliquid 2026-11-23).
+- 3 Kalshi–Polymarket pairs are matched across different dates; for example "Sacramento Republic wins" and "Will Sacramento Republic FC win on 2026-11-15?" (Kalshi 2026-11-15, Polymarket starts 2026-11-17 02:00Z).
+- 183 more pairs could not be confirmed automatically and were left out (see "Not lined up" above).
+- 1,196 of 1,507 pairs with a Predict.fun side have no Predict.fun trades yet (no mark), so they cannot be priced.
+- No resolutions came back for Hyperliquid (29 markets whose events started 6 hours to 7 days before the report).
 
 ## Method
 
-- Pairs come from Kairos `/matched-markets`; [oracle3-extras](https://github.com/YichengYang-Ethan/oracle3-extras) checks each one on both venues and decides which outcome of market B pays when market A's first outcome pays.
+- Pairs come from Kairos's approved links (`/market-links`; `/matched-markets` until 11 November 2026), every two venues of a link making one pair; [oracle3-extras](https://github.com/YichengYang-Ethan/oracle3-extras) checks each one on both venues and decides which outcome of market B pays when market A's first outcome pays.
 - Divisions follow Kairos's categories (Politics and World: Elections & Politics; Sports and Esports: Sports; Finance: Economics & Finance; Tech and Science: Tech & Science). When the two sides disagree, Sports comes first, then Climate & Weather, Economics & Finance, Elections & Politics, Tech & Science and Crypto.
 - The live check uses each venue's published fee schedule (oracle3), Kalshi and Polymarket order books, Kairos marks for Predict.fun last trades and Kairos fee quotes to confirm them.
 - Price agreement uses Kairos hourly candles; the sports section uses one-minute candles; trading activity uses `/v1/trades/metrics`; settlement uses `/v1/resolutions`.
