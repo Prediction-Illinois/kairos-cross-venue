@@ -206,7 +206,7 @@ def activity_sample(
 
 async def collect(archive: Path, now: datetime, *, sample: int) -> dict[str, Any]:
     client = KairosClient()
-    found = await kairos_relations(client)
+    found = await kairos_relations(client, clusters=True)
     relations = found.relations
     scan = await scan_relations(relations, client=client)
     recent = await recent_history(relations, client, now=now)
@@ -968,7 +968,8 @@ def markdown(data: dict[str, Any], day: str, drawn: Mapping[str, bool], *, chart
         '## Method',
         '',
         "- Pairs come from Kairos's approved links (`/market-links`; `/matched-markets` until "
-        '11 November 2026), every two venues of a link making one pair; [oracle3-extras]'
+        '11 November 2026), every two venues of a link making one pair, and outside sports from '
+        "Kairos's equivalence clusters around every non-sports Predict.fun market; [oracle3-extras]"
         '(https://github.com/YichengYang-Ethan/oracle3-extras) checks each one on both venues and '
         "decides which outcome of market B pays when market A's first outcome pays.",
         "- Divisions follow Kairos's categories (Politics and World: Elections & Politics; Sports and "

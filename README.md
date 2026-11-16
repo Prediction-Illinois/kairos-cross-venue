@@ -21,7 +21,7 @@ A daily look at how prediction markets price the same events on different venues
 
 | Part | Question | Data |
 |---|---|---|
-| Pairs | Which markets on two venues are the same event, and which outcome of one pays when the other's pays? | Kairos `/market-links` (`/matched-markets` until 11 November 2026), checked on both venues by [oracle3-extras](https://github.com/YichengYang-Ethan/oracle3-extras) |
+| Pairs | Which markets on two venues are the same event, and which outcome of one pays when the other's pays? | Kairos `/market-links` (`/matched-markets` until 11 November 2026) and, outside sports, `/market-clusters`, checked on both venues by [oracle3-extras](https://github.com/YichengYang-Ethan/oracle3-extras) |
 | Live check | Do any prices break P(A) = P(B) after both venues' fees, and for how many contracts? | Kalshi and Polymarket order books; Kairos marks and fee quotes for Predict.fun |
 | Price agreement | How far apart do the two venues trade over the last day, before each event starts? | Kairos hourly candles |
 | Sports around game time | How far apart do they trade before and during a game? | Kairos one-minute candles |
