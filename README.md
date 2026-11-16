@@ -1,6 +1,6 @@
 # Kairos cross-venue monitor
 
-A daily look at how prediction markets price the same events on different venues, built on [Kairos](https://kairos.trade)'s matched-market catalog. Kairos finds the same market on Kalshi, Polymarket, Predict.fun and Hyperliquid; this repository checks every pair it lists and reports by [Prediction@Illinois](https://prediction-illinois.github.io)'s six market divisions: Elections & Politics, Sports, Crypto, Economics & Finance, Tech & Science, and Climate & Weather.
+A daily look at how prediction markets price the same events on different venues, built on [Kairos](https://kairos.trade)'s catalog of linked markets. Kairos finds the same market on Kalshi, Polymarket, Predict.fun and Hyperliquid; this repository checks every pair it lists and reports by [Prediction@Illinois](https://prediction-illinois.github.io)'s six market divisions: Elections & Politics, Sports, Crypto, Economics & Finance, Tech & Science, and Climate & Weather.
 
 <!-- report:start -->
 **Latest report: [2026-11-11](reports/latest.md)**: 13,295 of 13,462 Kairos pairs lined up across Kalshi, Polymarket, Predict.fun and Hyperliquid.
@@ -21,7 +21,7 @@ A daily look at how prediction markets price the same events on different venues
 
 | Part | Question | Data |
 |---|---|---|
-| Pairs | Which markets on two venues are the same event, and which outcome of one pays when the other's pays? | Kairos `/matched-markets`, checked on both venues by [oracle3-extras](https://github.com/YichengYang-Ethan/oracle3-extras) |
+| Pairs | Which markets on two venues are the same event, and which outcome of one pays when the other's pays? | Kairos `/market-links` (`/matched-markets` until 11 November 2026), checked on both venues by [oracle3-extras](https://github.com/YichengYang-Ethan/oracle3-extras) |
 | Live check | Do any prices break P(A) = P(B) after both venues' fees, and for how many contracts? | Kalshi and Polymarket order books; Kairos marks and fee quotes for Predict.fun |
 | Price agreement | How far apart do the two venues trade over the last day, before each event starts? | Kairos hourly candles |
 | Sports around game time | How far apart do they trade before and during a game? | Kairos one-minute candles |
@@ -37,7 +37,7 @@ Each day's numbers are in [`reports/`](reports/); [`reports/latest.md`](reports/
 
 ```text
 Kairos Data API             oracle3-extras                          this repository
-/matched-markets    --->    line up outcomes on both venues   --->  three times a day: archive the pairs
+/market-links       --->    line up outcomes on both venues   --->  three times a day: archive the pairs
                             scan after fees, walk order books        daily at 12:00 UTC: report by division
 Kairos Market Data API -->  marks, candles, trade metrics,           reports/, README
 Kairos fee quotes           settlement checks
